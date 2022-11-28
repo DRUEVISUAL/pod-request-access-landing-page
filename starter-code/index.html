@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@200;300&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css"> 
+  
+  <title>Frontend Mentor | Pod request access landing page</title>
+
+</head>
+
+<body>
+
+  <main id="request_page" class="request_page">
+
+    <div class="container">
+
+      <img src="./assets/desktop/logo.svg" alt="logo and name" class="logo">
+
+      <div class="content_container">
+        <div class="text_container">
+          <h1 class="title">Publish your podcasts <span>everywhere.</span></h1>
+          <p class="text">Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, 
+            Apple Podcasts, Google Podcasts, Pocket Casts and more!</p>
+        </div>
+      
+        <div class="bottom_part">
+          <div class="services_icon_container">
+            <img src="./assets/desktop/spotify.svg" alt="spotify logo" class="spotify_logo">
+            <img src="./assets/desktop/apple-podcast.svg" alt="apple podcast logo" class="apple_podcast_logo">
+            <img src="./assets/desktop/google-podcasts.svg" alt="google podcast logo" class="google_podcast_logo">
+            <img src="./assets/desktop/pocket-casts.svg" alt="pocket casts logo" class="pocket_podcast_logo">
+          </div>
+
+          <form action="#" method="get" id="request">
+              <p id="invalid_input">Oops! Please check your email.</p>
+              <input type="email" name="email" id="email" placeholder="Email address" required oninvalid="invalidInput()" aria-required="true">
+              <button id="submit" form="request">Request Access</button>
+          </form>
+        </div>
+      </div>
+
+      <img src="/assets/desktop/bg-pattern-dots.svg" alt="dots in a shape of a square" class="bottom_dots">
+    </div>
+
+  </main>
+
+  <script src="./index.js"></script>
+</body>
+</html>
