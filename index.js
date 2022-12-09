@@ -1,4 +1,3 @@
-
 const error = document.querySelector('#invalid_input');
 
 error.style.display = 'none'
